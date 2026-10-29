@@ -1,0 +1,60 @@
+# Dimensional Accessibility and Gravitational Localization in TCGS–SEQUENTION
+
+## Spectral Response, Boundary Stability, and Constitutive Constraints
+
+**Henry Arellano-Peña · Manuscript version 4 · 29 October 2026**
+
+This repository contains the computational supplement for *Dimensional Accessibility and Gravitational Localization: Spectral Response, Boundary Stability, and Constitutive Constraints in TCGS–SEQUENTION*. It provides the three verification programs, regression tests, numerical outputs, published-coefficient provenance, dependency pins, and instructions needed to reproduce the manuscript's calculations.
+
+**Validated release: 529 numerical checks and nine separate unit tests, with zero failures.** These are finite computational consistency checks, not experimental observations, a certification of the analytical proofs, or empirical confirmation of Counterspace.
+
+## Scientific scope
+
+The programs evaluate a conditional static scalar response based on an inverse-square half-line operator. They test spectral normalization, Bessel-ratio and spectral-integral agreement, potential and force corrections, boundary detuning, a warped-action realization, positive spectral measures, and the local AQUAL flux Jacobian. They also verify the hyperbolic horoball comparison geometry and the translation of published inverse-power coefficients into a conditional curvature-radius constraint.
+
+For the declared critical, sharp-readout, universally coupled candidate with index 3/2, the potential correction is `D(r) = 2 ell / (pi r)` and the fractional force correction is `E(r) = 4 ell / (pi r)`. Matching the published `k = 2` potential convention gives `ell = pi beta_2 r_ref / 2`. The adopted 2007 coefficient translates into approximately **0.707 micrometres**, retaining the source table's **68% confidence convention**. It is a conditional historical benchmark, not a claim to the strongest current bound or a new experimental fit. See [the provenance record](results/dimensional_accessibility/published_powerlaw_limits.json) and [the geometry notes](docs/dimensional_accessibility/GEOMETRY_CONSTRAINTS.md).
+
+The response model is not a completed relativistic tensor theory. The cross-sector scale comparison is conditional on identifying the same curvature with the AQUAL scale-setting functional; it is not a derived transition rule.
+
+## Reproduce the calculations
+
+The verified environment is **Python 3.13.5**, NumPy **2.3.5**, SciPy **1.17.0**, and mpmath **1.3.0**. Run the following from the repository root, preferably in a virtual environment:
+
+```sh
+python -m pip install -r requirements.txt
+python code/reproduce.py --output results/dimensional_accessibility
+python code/verify_extensions.py --output results/dimensional_accessibility
+python code/verify_geometry_constraints.py --output results/dimensional_accessibility
+python -m unittest discover -s tests -v
+```
+
+No network access or external dataset is required after installation. Published coefficients are documented inputs, not downloaded likelihoods. The original baseline program also generates an optional table-formatting file locally; generated LaTeX files are ignored and are not distributed in this repository.
+
+| Program or test suite | Expected result |
+| --- | ---: |
+| `code/reproduce.py` | 186 checks; 12 numerical table rows |
+| `code/verify_extensions.py` | 225 checks |
+| `code/verify_geometry_constraints.py` | 118 checks |
+| `python -m unittest discover -s tests -v` | 9 unit tests |
+
+Full numerical reports record each comparison and its tolerance. Floating-point results should agree within those tolerances; identical bytes across all platforms are not promised. See [REPRODUCIBILITY.md](docs/dimensional_accessibility/REPRODUCIBILITY.md) for output descriptions and [summary.json](results/dimensional_accessibility/summary.json) for the verified environment and script checksums.
+
+## Repository contents
+
+- `code/` and `tests/`: the three original verification programs and two regression-test files.
+- `results/dimensional_accessibility/`: the numerical table, verification reports, source-coefficient provenance, conditional hierarchy calculation, and execution summary.
+- `docs/dimensional_accessibility/`: reproduction instructions, geometry and constraint notes, and dependency pins.
+- [`REFERENCES.md`](REFERENCES.md): the manuscript's 27-entry reference index, with public access routes and version qualifications.
+- `CITATION.cff`, `release.json`, and `SHA256SUMS.txt`: citation metadata, release provenance, and file-integrity records.
+
+This is a computational release. Manuscript LaTeX sources, generated TeX tables, compilation files, manuscript archives, and reference PDFs are not distributed here. The bibliography provides access links for the cited papers.
+
+## Provenance and citation
+
+The manuscript's original complete computational release remains available at [TCGS-SEQUENTION-protocol, commit 1353cf54a94cfb6f3923a1f2a9c467d9eff68afa](https://github.com/hyrucanji77/TCGS-SEQUENTION-protocol/tree/1353cf54a94cfb6f3923a1f2a9c467d9eff68afa). This dedicated repository preserves the three verification programs and their scientific inputs from that release; it does not invalidate the immutable citation in manuscript version 4.
+
+For reproducible use of this repository, cite the full commit hash returned by `git rev-parse HEAD`, together with the author, manuscript title, version, and date. See [CITATION.cff](CITATION.cff). No journal publication or DOI is asserted for this manuscript.
+
+## License
+
+The original code, documentation, and numerical outputs are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**; see [LICENSE.txt](LICENSE.txt). Cited third-party works retain their respective rights and licenses.
