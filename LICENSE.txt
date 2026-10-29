@@ -1,0 +1,15 @@
+Copyright (c) 2026 Henry Arellano-Peña.
+
+The original computational supplement, documentation, and numerical outputs in
+this repository are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution must identify the author and the work: Dimensional Accessibility
+and Gravitational Localization: Spectral Response, Boundary Stability, and
+Constitutive Constraints in TCGS-SEQUENTION, computational supplement,
+version 4 (29 October 2026).
+
+Cited third-party papers and software dependencies retain their respective
+copyright and licensing terms. References and access links do not relicense
+those works.

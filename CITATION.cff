@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this computational supplement, the associated manuscript version, and the full repository commit used."
+type: software
+title: "Dimensional Accessibility and Gravitational Localization: Spectral Response, Boundary Stability, and Constitutive Constraints in TCGS-SEQUENTION — Computational Supplement"
+authors:
+  - family-names: "Arellano-Peña"
+    given-names: "Henry"
+version: "4"
+date-released: "2026-10-29"
+repository-code: "https://github.com/hyrucanji77/Dimensional-Accessibility-and-Gravitational-Localization-in-TCGS-SEQUENTION"
+url: "https://github.com/hyrucanji77/Dimensional-Accessibility-and-Gravitational-Localization-in-TCGS-SEQUENTION"
+license: CC-BY-4.0
+abstract: "Computational supplement for a conditional static scalar gravitational-response analysis, including spectral normalization, boundary detuning, hyperbolic horoball geometry, and published inverse-power coefficient conversions. The release contains three suites totaling 529 numerical checks and nine separate regression tests. No experimental data are fitted."
+keywords:
+  - gravitational localization
+  - spectral response
+  - hyperbolic geometry
+  - reproducibility
+  - TCGS-SEQUENTION

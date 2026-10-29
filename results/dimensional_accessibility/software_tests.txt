@@ -1,0 +1,14 @@
+test_aqual_eigenvalues (test_dimensional_accessibility.DimensionalAccessibilityTests.test_aqual_eigenvalues) ... ok
+test_exact_kernel (test_dimensional_accessibility.DimensionalAccessibilityTests.test_exact_kernel) ... ok
+test_invalid_arguments (test_dimensional_accessibility.DimensionalAccessibilityTests.test_invalid_arguments) ... ok
+test_conditional_scale_hierarchy (test_geometry_constraints.GeometryConstraintTests.test_conditional_scale_hierarchy) ... ok
+test_hoskins_historical_ordering (test_geometry_constraints.GeometryConstraintTests.test_hoskins_historical_ordering) ... ok
+test_hyperbolic_and_flat_sections (test_geometry_constraints.GeometryConstraintTests.test_hyperbolic_and_flat_sections) ... ok
+test_invalid_parameters (test_geometry_constraints.GeometryConstraintTests.test_invalid_parameters) ... ok
+test_published_conversion_confidence (test_geometry_constraints.GeometryConstraintTests.test_published_conversion_confidence) ... ok
+test_published_provenance (test_geometry_constraints.GeometryConstraintTests.test_published_provenance) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

@@ -1,0 +1,29 @@
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Manuscript sources, generated table formatting, and compilation products
+*.tex
+*.bib
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# PDFs and manuscript archives are not part of this computational repository
+*.pdf
+*.zip
+
+# Platform files
+.DS_Store
+Thumbs.db
