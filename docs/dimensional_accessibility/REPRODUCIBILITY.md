@@ -1,4 +1,4 @@
-# Reproducing manuscript version 4
+# Reproducing computational release 4 for manuscript v4.2 Final
 
 Henry Arellano-Peña. *Dimensional Accessibility and Gravitational Localization: Spectral Response, Boundary Stability, and Constitutive Constraints in TCGS-SEQUENTION*. 29 October 2026.
 
@@ -7,6 +7,14 @@ Henry Arellano-Peña. *Dimensional Accessibility and Gravitational Localization:
 This dedicated repository contains the three programs and two test files from the complete computational release originally published in `hyrucanji77/TCGS-SEQUENTION-protocol` at commit `1353cf54a94cfb6f3923a1f2a9c467d9eff68afa`. Their bytes, mathematical inputs, and checks are preserved. The original immutable citation in manuscript version 4 remains valid; the present repository provides a standalone home with paper-specific documentation and result records.
 
 The programs evaluate a conditional static scalar half-line response. They do not fit observations, establish Counterspace empirically, or provide a relativistic tensor completion.
+
+## Compatibility with the final manuscript
+
+The current article is **v4.2 Final: 45 pages and 29 numbered references**. It retains the version 4 programs, tests, inputs, and numerical outputs without modification. Its reference [18] identifies both the dedicated snapshot `d8c5ade46c0c47ceaa2408f7965ae58402e5b479` and the original protocol snapshot `1353cf54a94cfb6f3923a1f2a9c467d9eff68afa`. Metadata at those historical commits describe the original 41-page, 27-reference manuscript and are not rewritten.
+
+**Appendix F.4, including Proposition F.1 and Equations (89)–(95), is analytical and is not part of the 529 numerical checks.** The spatial-dilation selection, variational argument, conformal property, and source-scaling discussion are established in the manuscript. No additional computational coverage or new test run is claimed by this documentation-only update.
+
+`CITATION.cff` retains software version `4`; `release.json` separately identifies the current manuscript and the original release-associated article. The unchanged scientific checksum manifest remains applicable. See [MANUSCRIPT_COMPATIBILITY.md](MANUSCRIPT_COMPATIBILITY.md).
 
 ## Environment
 

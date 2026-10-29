@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this computational supplement, the associated manuscript version, and the full repository commit used."
+message: "Please cite this version 4 computational supplement, the associated manuscript version, and the full repository commit used. The same software supports manuscript v4.2 Final (45 pages, 29 references); Appendix F.4 is analytical and is not part of the numerical checks."
 type: software
 title: "Dimensional Accessibility and Gravitational Localization: Spectral Response, Boundary Stability, and Constitutive Constraints in TCGS-SEQUENTION — Computational Supplement"
 authors:
@@ -10,7 +10,7 @@ date-released: "2026-10-29"
 repository-code: "https://github.com/hyrucanji77/Dimensional-Accessibility-and-Gravitational-Localization-in-TCGS-SEQUENTION"
 url: "https://github.com/hyrucanji77/Dimensional-Accessibility-and-Gravitational-Localization-in-TCGS-SEQUENTION"
 license: CC-BY-4.0
-abstract: "Computational supplement for a conditional static scalar gravitational-response analysis, including spectral normalization, boundary detuning, hyperbolic horoball geometry, and published inverse-power coefficient conversions. The release contains three suites totaling 529 numerical checks and nine separate regression tests. No experimental data are fitted."
+abstract: "Computational supplement for a conditional static scalar gravitational-response analysis, including spectral normalization, boundary detuning, hyperbolic horoball geometry, and published inverse-power coefficient conversions. The release contains three suites totaling 529 numerical checks and nine separate regression tests. No experimental data are fitted. The software is unchanged for manuscript v4.2 Final (45 pages, 29 references). Appendix F.4 is analytical and is not covered by the 529 numerical checks."
 keywords:
   - gravitational localization
   - spectral response
